@@ -1,0 +1,11 @@
+Pagina 1:
+
+Tive que pesquisar como utilizar melhor o sass dentro do vue JS em tutorias no youtube.
+Tive que pesquisar dentro do curso da T.EX como passar dados do componente filho para o pai.
+
+Conhecimentos que adquiri na documentação do Vue: 
+1 - Utilização do objeto this.router para manipulação das rotas
+2 - Descobrir como acessar o objeto data de outro componente utilizando template refs.
+
+
+===========================================================================================================

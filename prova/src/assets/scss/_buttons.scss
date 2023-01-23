@@ -1,0 +1,17 @@
+@import "./colors.scss";
+
+.btn {
+    color: #fff;
+    background-color: $colorSecundary;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    width: 300px;
+    cursor: pointer;
+    transition: .1s;
+
+    &:hover {
+        transform: scale(1.01);
+        background-color: #7182af;
+    }
+}

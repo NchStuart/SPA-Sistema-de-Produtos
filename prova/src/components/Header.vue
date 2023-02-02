@@ -17,7 +17,7 @@ export default {
     .header {
         @include center-column;
         background-color: $colorSecundary;
-        height: 15vh;
+        height: 10vh;
         width: 100%;
     }
 

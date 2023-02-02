@@ -1,6 +1,14 @@
 <template>
+    <Header/>
     <router-view/>
 </template>
+
+<script>
+import Header from "@/components/Header.vue";
+export default {
+  components: {Header}
+}
+</script>
 
 <style lang="scss">
 @import "./assets/scss/_colors.scss";
@@ -11,13 +19,20 @@
   font-family: "Roboto";
 }
 
+
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
   background-color: $colorPrimary;
 }
 
 main {
-  @include center-column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 70vh;
 }
 </style>

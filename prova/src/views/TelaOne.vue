@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <Header />
-    <main>
+    <main class="container">
       <p class="code">{{code}}</p>
 
       <p class="accountant s">Seu código expira em {{ cont }} {{cont == 1 ? 'segundo' : 'segundos'}}...</p>
@@ -10,17 +8,17 @@
 
       <button class="newCode s" @click="generateCode()">Enviar um novo código</button>
 
-      <!-- <router-link to="/categorias"> -->
-        <button class="btn" @click="checkCode()">Avançar</button>
-      <!-- </router-link> -->
+      <Button class="btn" txt="Avançar" @click="checkCode()"/>
     </main>
-    <Footer class="footer"/>
-  </div>
+    <Footer>
+      <Button class="btnFooter" txt="Avançar" @click="checkCode()"/>
+    </Footer>
 </template>
 
 <script>
 import Header from "@/components/Header.vue";
 import InputText from "@/components/InputText.vue";
+import Button from "@/components/Button.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
@@ -28,7 +26,8 @@ export default {
   components: {
     Header,
     InputText,
-    Footer
+    Footer,
+    Button
   },
   data() {
     return {
@@ -64,15 +63,15 @@ export default {
     },
     checkCode() {
       if (this.$refs.txtI.$data.value == this.code) {
+        this.$store.dispatch('changeStateCode',true);
         this.$router.push('categorias')
       } else {
-        alert('Codigo incorreto, tente novamente..')
+        alert('Código incorreto, tente novamente...')
         this.generateCode();
+        this.$refs.txtI.value = '';
         return;
       }
     }
-  },
-  computed: {
   },
   mounted() {
     this.generateCode();
@@ -82,8 +81,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/scss/_buttons.scss";
 @import "@/assets/scss/_mixins.scss";
+
+
+.container {
+  margin-top: 62px;
+}
+
 .s {
   color: #B0B5C4;
 }
@@ -109,10 +113,26 @@ export default {
   margin-top: 30px;
   font-size: 30px;
   color: #4A4E5D;
+  user-select: none;
 }
 
 .btn {
   margin-top: 20px;
-  margin-bottom: 92px;
+  margin-bottom: 50px;
+}
+
+.btnFooter{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .btn{
+    display: none;
+      margin-bottom: 0px;
+      margin-top: 0px;
+  }
+  .btnFooter {
+    display: block;
+  }
 }
 </style>

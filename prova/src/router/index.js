@@ -11,6 +11,16 @@ const routes = [
     path: '/categorias',
     name: 'categorias',
     component: () => import('../views/TelaTwo.vue')
+  },
+  {
+    path: '/produtos',
+    name: 'produtos',
+    component: () => import('../views/TelaThree.vue')
+  },
+  {
+    path: '/purchase-summary',
+    name: 'purchase-summary',
+    component: () => import('../views/TelaFor.vue')
   }
 ]
 

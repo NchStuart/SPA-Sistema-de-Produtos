@@ -1,11 +1,53 @@
-Pagina 1:
+Anotações Gerais:
 
-Tive que pesquisar como utilizar melhor o sass dentro do vue JS em tutorias no youtube.
-Tive que pesquisar dentro do curso da T.EX como passar dados do componente filho para o pai.
+Dificuldade do teste em geral: Médio.
+
+Dificuldade em realizar a responsividade da pagina (Principalmente o Footer, Responsividade ainda ruim até o momento).
+
+Dificuldade entre comunicar dados entre os componentes (Dificuldade resolvida mas demandou tempo).
+
+Dificuldade em entender se o Footer/Header fica no App.vue ou dentro das Views. (Não resolvida).
+
+Tela 01:
+
+Duração: 3 a 4 horas.
+
+Nivel de dificuldade: Médio.
+
+Tive que pesquisar como utilizar melhor o sass dentro do vue JS em tutorias no youtube. (Tive sucesso)
+Tive que pesquisar dentro do curso da T.EX como passar dados do componente filho para o pai. (Tive sucesso)
 
 Conhecimentos que adquiri na documentação do Vue: 
-1 - Utilização do objeto this.router para manipulação das rotas
-2 - Descobrir como acessar o objeto data de outro componente utilizando template refs.
+1 - Utilização do objeto this.$router e this.$route para manipulação das rotas (Tive sucesso) 
+2 - Descobrir como acessar o objeto data e varios outros dados do componente filho para o componente pai utilizando template refs. (Tive sucesso)
 
 
 ===========================================================================================================
+
+Tela 02:
+
+Duração: 30 minutos.
+
+Nivel de dificuldade: Facil.
+
+Não consegui fazer com que no desktop ao selecionar um input radio fique com o background na cor desejada, mas no mobile deu certo.
+
+=================================================================================================================
+
+Tela 03:
+
+Duração: 8 horas.
+
+Nivel de dificuldade: Médio.
+
+Tempo de execução alto por conta de eu ter tentado primeiro fazer sem usar o VueX mas não tive sucesso pois o codigo iria ficar muito verboso para cada componente.
+
+=================================================================================================================
+
+Tela 04:
+
+Duração: 30 minutos
+
+Nivel de dificuldade: Facil.
+
+=================================================================================================================
